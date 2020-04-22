@@ -1,0 +1,30 @@
+apiVersion: v1
+entries:
+  wavefront:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2020-04-22T11:38:28.21957-07:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: ^2.2.1
+    description: Wavefront Kubernetes collector
+    digest: bf1796a22fb70c0709e146560b58f77ef0b6971a9489393ea844b630720d2415
+    home: https://www.wavefront.com
+    keywords:
+    - metric
+    - monitoring
+    - observability
+    - alerting
+    maintainers:
+    - email: rvikram@vmware.com
+      name: vikramraman
+    name: wavefront
+    sources:
+    - https://github.com/wavefrontHQ/wavefront-collector-for-kubernetes
+    - https://github.com/wavefrontHQ/wavefront-proxy
+    urls:
+    - https://dambott.github.io/helmchart/wavefront-1.2.0.tgz
+    version: 1.2.0
+generated: "2020-04-22T11:38:28.217326-07:00"
