@@ -100,17 +100,15 @@ collector:
   ## Can be used to add additional discovery rules
   #   config:
   ## auto-discover a sample prometheus application
-  #   - name: prom-example
-  #     type: prometheus
-  #     selectors:
-  #       labels:
-  #         k8s-app:
-  #         - prom-example
-  #     port: 8080
-  #     path: /metrics
-  #     prefix: kube.prom-example.
-  #     tags:
-  #       alt_name: sample-app
+     - name: prom-example
+       type: prometheus
+       selectors:
+         labels:
+           nsx-t:
+           - prom-example
+       port: 9191
+       path: /metrics
+       prefix: nsxt.
   ## auto-discover mongodb pods (replace USER:PASSWORD)
   #   - name: mongodb
   #     type: telegraf/mongodb
