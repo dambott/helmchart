@@ -61,6 +61,9 @@ collector:
   ## These metrics are more efficient than kube-state-metrics
   kubernetesState: true
 
+  # If set to true, systemd metrics will be generated
+  systemdMetrics: true
+  
   ## If set to true Kubernetes API Server will also be scraped for metrics (default false)
   # apiServerMetrics: false
 
